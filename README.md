@@ -115,7 +115,7 @@ This project is proprietary. Contact the author for licensing information.
 
 ---
 
-**WAHYU STORE -   WAHYU STORE **
+**WAHYU STORE -   WAHYU STORE**
 
 
 
