@@ -3,7 +3,7 @@
 # IZIN SCRIPT ANTI NGEBUG / NGEHANG
 # =====================================
 
-IZIN_URL="https://raw.githubusercontent.com/arivpnstores/izin/main/ip"
+IZIN_URL="https://raw.githubusercontent.com/WAHYUSTORE17/izin/main/ip"
 CACHE_DIR="/tmp/izin_cache"
 USER_FILE="/usr/bin/user"
 EXP_FILE="/usr/bin/e"
