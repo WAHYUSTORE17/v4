@@ -1104,6 +1104,11 @@ restart_system
 clear
 print_install "auto_system"
 auto_system
+rm -rf /usr/bin/menu_version
+rm -rf update.sh
+wget -O update.sh https://raw.githubusercontent.com/WAHYUSTORE17/v4/main/update.sh 
+chmod +x update.sh 
+bash update.sh
 clear
 }
 instal
@@ -1118,11 +1123,6 @@ rm -rf /root/README.md
 rm -rf /root/domain
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
-rm -rf /usr/bin/menu_version
-rm -rf update.sh
-wget -O update.sh https://raw.githubusercontent.com/WAHYUSTORE17/v4/main/update.sh 
-chmod +x update.sh 
-./update.sh
 clear
 echo -e "\033[96m==========================\033[0m"
 echo -e "\033[92m      INSTALL SUCCES      \033[0m"

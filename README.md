@@ -39,7 +39,7 @@ apt update -y && wget https://raw.githubusercontent.com/bin456789/reinstall/main
 
 ### Install Script
 ```bash
-apt update -y && apt install screen curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/WAHYUSTORE17/v4/main/Vpn/xray.zip -O /tmp/install && chmod +x /tmp/install && screen -S ari /tmp/install
+apt update -y && apt install screen curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/WAHYUSTORE17/v4/main/Vpn/install.sh -O install.sh && chmod +x install.sh && screen -S ari install.sh
 ```
 
 ### Update Script
