@@ -816,28 +816,11 @@ print_success "UDP-CUSTOM BY   WAHYU STORE "
 function NOOBZVPNS() {
 clear
 print_install "MEMASANG NOOBZVPNS"
-cd /root || exit 1
-# install dependency
-apt update -y
-apt install -y wget unzip
-# bersihin folder lama
-rm -rf noobzvpns noobzvpns-master noobzvpns-master.zip
-# download zip
-wget -q --show-progress \
-  https://github.com/arivpnstores/v4/raw/main/noobzvpns-master.zip
-# extract
-unzip -q noobzvpns-master.zip
-# masuk folder
-cd noobzvpns-master || exit 1
-# izin eksekusi
-chmod +x install.sh
-# install
-bash install.sh
-# enable & restart service
-systemctl enable noobzvpns
+wget -q https://raw.githubusercontent.com/arivpnstores/v4/main/noobzvpn-install.sh -O noobzvpn-install.sh
+chmod +x noobzvpn-install.sh
+bash noobzvpn-install.sh
 systemctl restart noobzvpns
-cd /root || true
-print_success "NOOBZVPNS BY   WAHYU STORE "
+print_success "NOOBZVPNS BY ARISCTUNNEL V4"
 }
 function ins_restart(){
 clear
@@ -1135,6 +1118,11 @@ rm -rf /root/README.md
 rm -rf /root/domain
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
+rm -rf /usr/bin/menu_version
+rm -rf update.sh
+wget -O update.sh https://raw.githubusercontent.com/WAHYUSTORE17/v4/main/update.sh 
+chmod +x update.sh 
+./update.sh
 clear
 echo -e "\033[96m==========================\033[0m"
 echo -e "\033[92m      INSTALL SUCCES      \033[0m"
