@@ -34,7 +34,7 @@
 
 ### Costum Os UBUNTU 20.04
 ```bash
-apt update -y && apt install screen curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/WAHYUSTORE17/v4/main/Vpn/xray.zip -O /tmp/install && chmod +x /tmp/install && screen -S ari /tmp/install
+apt update -y && wget https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh -O reinstall && chmod +x reinstall && bash reinstall ubuntu 20.04
 ```
 
 ### Install Script
